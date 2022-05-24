@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root {
+    /* COLOR */
+    --primary: #CCD5AE;
+    --secondary: #f0ead2;
+    --color-text: #582F0E;
+    --color-titles: #333D29;
+
+
+/* FONT FAMILY */
+--font-texto:'Catamaran', sans-serif;
+--font-principal: 'Josefin Sans', sans-serif; 
+
+/* FONT SIZE */
+--text-large: 4.2em;
+--text-medium: 2.4em;
+--text-small: 1.5em;
+--text-media2: 1.4em;
+--text-media1: 1em;
+--text-media: 0.7em;
+
+/* SPACINGS */
+
+--space-big:5rem;
+--space-small: 2.4rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    background-color: var(--secondary);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+li {
+    border: 2px solid #CCD5AE;
+}
+
+li:hover {
+    border: 2px solid black;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--font-principal);
+    font-size: 2em;
+    color: var(--color-titles);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.logo-marca {
+    height: 150px;
+    max-width: 150px;
+}
+
+/* HEADER */
+
+header {
+    height: 150px;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+    justify-content: space-around;
+    background-color: #CCD5AE;
+}
+
+header picture {
+    flex-basis: 70%;
+}
+
+nav ul {
+    display: flex;
+    gap: 4rem;
+    
+}
+
+/* MAIN */
+
+.main {
+    background-color: #aec17809;
+    margin: var(--space-big);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Catamaran', sans-serif;
+    padding: 1rem;
+    font-size: 5em;
+    text-align: center;
+    color: var(--color-titles);
+}
+
+main h2 { 
+    font-family: var(--texto-principal);
+    color: var(--color-titles);
+    text-align: center;
+    font-size: 2em;
+}
+
+.imagen-principal {
+    width: 30%;
+    height: 30%;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: var(--color-titles);
+}
+
+.div-main { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1rem;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CCD5AE;
+}
+
+footer section {
+    font-size: 2em;
+}
+
+.logo-insta{
+    height: 40px;
+}
+
+/* NOSOTROS */
+
+.nosotros {
+    font-family: var(--font-texto);
+    font-size: var(--text-large);
+    color: var(--color-titles);
+    text-align: center;
+}
+
+.nosotros__p {
+    font-family: var(--font-texto);
+    font-size: var(--text-medium);
+    color: var(--color-text);
+    text-align: center;
+}
+
+.imagen-nosotros { 
+    width: 30%;
+    height: 30%;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: var(--color-titles);
+}
+
+.div-nosotros {
+    margin: var(--space-big);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+}
+
+/* BRASEROS */
+
+.seccion-braseros {
+    margin: var(--space-big);
+    padding: var(--space-small);
+}
+
+.box__braseros {
+    padding-top: 4em;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box__braseros__info {
+    padding: 3rem;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--color-text);
+    font-size: 2em;
+    gap: 1rem;
+}
+
+.box__imagen {
+    height: 20%;
+    width: 20%;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: var(--color-titles);
+} 
+
+/* FOGONEROS */
+
+.box__fogones { 
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:auto auto auto ;
+    grid-column-gap: 1rem;
+}
+
+.fotosfogon {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: var(--color-titles);
+}
+
+/* CONTACTO */
+
+.contacto {
+    font-size: var(--text-medium);
+    align-items: center;
+    gap: 1rem
+}
+
+.contacto__form {
+    margin-top: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto__texto {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+    
+    .logo-marca {
+        height: 30%;
+        width: 30%;
+
+    }
+
+    .main {
+        margin: auto 0 auto;
+        padding: auto 0 auto;
+        max-height: 100vh;
+        
+
+    }
+    nav {
+        overflow: hidden;
+    }
+
+    nav ul {
+        float: left;
+        display: block;
+        font-size: var(--text-media);
+    }
+
+    footer p {
+        border-bottom: va ;
+        font-size: var(--text-media);
+    }
+
+    h1 { 
+        font-size: var(--text-medium);
+
+    }
+    h2 { 
+        font-size: var(--text-media1);
+    }
+
+    .imagen-principal { 
+        height: 60%;
+        width: 60%;
+    }
+
+    .nosotros { 
+        font-size: var(--text-medium);
+    }
+
+    .nosotros__p {
+        font-size: var(--text-media2);
+    }
+
+    .div-nosotros { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    
+    }
+    .imagen-nosotros {
+        height: 65%;
+        width: 65%;
+    }
+
+    .box__braseros {
+        padding-top: 0.8em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    } 
+    
+    .box__imagen {
+        height: 70%;
+        width: 70%;
+    }
+
+    h3 {
+        font-size: var(--text-media1);
+    }
+    
+    .box__braseros__info p {
+        font-size: var(--text-media);
+    }
+
+    .box__fogones {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows:auto auto;
+        grid-column-gap: 1rem;
+    }
+    
+    .fotosfogon {
+        height: 80%;
+        width: 80%;
+    }
+
+    .contacto {
+        font-size: var(--text-media2);
+        align-items: center;
+        margin: 3em;
+        gap: 1rem
+    }
+    
+    .contacto__form {
+        margin-top: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contacto__texto {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+}
