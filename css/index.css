@@ -104,7 +104,11 @@ nav ul {
     background-size: cover;
 }
 
+
 h1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
     font-family: 'Catamaran', sans-serif;
     padding: 1rem;
     font-size: 5em;
@@ -176,6 +180,10 @@ footer section {
     border-color: var(--color-titles);
 }
 
+.imagen-nosotros:hover {
+    box-shadow: 10px 10px 20px #333D29;
+}
+
 .div-nosotros {
     margin: var(--space-big);
     display: flex;
@@ -214,6 +222,10 @@ footer section {
     border-color: var(--color-titles);
 } 
 
+.box__imagen:hover {
+    box-shadow: 10px 10px 20px #333D29;
+}
+
 /* FOGONEROS */
 
 .box__fogones { 
@@ -231,6 +243,10 @@ footer section {
     border-style: solid;
     border-width: 0.2em;
     border-color: var(--color-titles);
+}
+
+.fotosfogon:hover {
+    box-shadow: 10px 10px 20px #333D29;
 }
 
 /* CONTACTO */
@@ -253,6 +269,17 @@ footer section {
 }
 
 
+
+/* ANIMACIONES */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* MOBILE */
 
