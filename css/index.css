@@ -95,6 +95,10 @@ nav ul {
     
 }
 
+.hamburger {
+    display: none;
+}
+
 /* MAIN */
 
 .main {
@@ -252,21 +256,21 @@ footer section {
 /* CONTACTO */
 
 .contacto {
-    font-size: var(--text-medium);
+    font-size: var(--text-media2);
     align-items: center;
     gap: 1rem
 }
 
 .contacto__form {
-    margin-top: 15rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
 }
 
-.contacto__texto {
+/* .contacto__texto {
     padding-right: 1rem;
     padding-left: 1rem;
-}
+} */
 
 
 
@@ -285,10 +289,16 @@ footer section {
 
 @media screen and (max-width: 480px) {
     
+
+
     .logo-marca {
         height: 30%;
         width: 30%;
 
+    }
+
+    .hamburger {
+        display: block;
     }
 
     .main {
@@ -298,9 +308,14 @@ footer section {
         
 
     }
+
     nav {
-        overflow: hidden;
+        display: none;
     }
+
+    /* nav {
+        overflow: hidden;
+    } */
 
     nav ul {
         float: left;
