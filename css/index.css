@@ -99,6 +99,20 @@ nav ul {
     display: none;
 }
 
+input[type="checkbox"]{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 94px;
+    opacity: 0;
+
+}
+
+input[type="checkbox"]:checked ~ nav {
+    display: block;
+
+}
+
 /* MAIN */
 
 .main {
@@ -298,6 +312,8 @@ footer section {
     }
 
     .hamburger {
+        position: absolute;
+        right: 76px;
         display: block;
     }
 
