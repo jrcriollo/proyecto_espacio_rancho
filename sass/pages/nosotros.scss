@@ -1,0 +1,35 @@
+.nosotros {
+    font-family: var(--font-texto);
+    font-size: var(--text-large);
+    color: var(--color-titles);
+    text-align: center;
+    & p { 
+        font-family: var(--font-texto);
+        font-size: var(--text-medium);
+        color: var(--color-text);
+        text-align: center;
+
+    }
+
+}
+
+.imagen-nosotros { 
+    width: 30%;
+    height: 30%;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: var(--color-titles);
+
+    &:hover {
+        box-shadow: 10px 10px 20px #333D29;
+    }
+}
+
+
+
+.div-nosotros {
+    margin: var(--space-big);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+}
