@@ -76,8 +76,7 @@ ul {
 
 header {
     height: 150px;
-    position: sticky;
-    top: 0%;
+    
     display: flex;
     align-items: center;
     flex-basis: 60%;
@@ -92,6 +91,7 @@ header picture {
 nav ul {
     display: flex;
     gap: 4rem;
+    margin: 5rem;
     
 }
 
@@ -103,7 +103,7 @@ input[type="checkbox"]{
     position: absolute;
     height: 30px;
     width: 30px;
-    right: 94px;
+    right: 130px;
     opacity: 0;
 
 }
@@ -279,7 +279,9 @@ footer section {
     margin-top: 10rem;
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
+
 
 /* .contacto__texto {
     padding-right: 1rem;
@@ -313,7 +315,7 @@ footer section {
 
     .hamburger {
         position: absolute;
-        right: 76px;
+        right: 110px;
         display: block;
     }
 

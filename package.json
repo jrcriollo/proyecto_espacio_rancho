@@ -1,0 +1,26 @@
+{
+  "name": "el-gran-brasero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrcriollo/proyecto_espacio_rancho.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrcriollo/proyecto_espacio_rancho/issues"
+  },
+  "homepage": "https://github.com/jrcriollo/proyecto_espacio_rancho#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  },
+  "description": ""
+}
